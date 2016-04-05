@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         try{
             Toast.makeText(this, name+ "씨, 배고파요!", Toast.LENGTH_LONG).show();
             Intent intent= new Intent(this, ResultActivity.class );
+            intent.putExtra("name", name);
+            intent.putExtra("age",10);
             startActivity(intent);
         }catch(NullPointerException e) {
             Toast.makeText(this, name+ "이름을 입력해 주세요!", Toast.LENGTH_LONG).show();
