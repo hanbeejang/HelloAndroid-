@@ -29,7 +29,7 @@ public class ResultActivity  extends AppCompatActivity {
         mResult=(TextView)findViewById(R.id.result);
         Log.d(TAG,"텍스트뷰 연결성공!");
 
-        Random r=new Random();#5 #
+        Random r=new Random();
         int result=r.nextInt(3);
         Log.d(TAG,"랜덤값 생성! : "+result);
 
